@@ -101,7 +101,7 @@ function App() {
 
           <footer className="app-footer">
             <p>Calendar Application for Communication Tracking</p>
-            <p className="right">Made by Ashutosh Soni</p>
+            <p className="right">© Ashutosh Soni</p>
           </footer>
         </div>
       </Router>
