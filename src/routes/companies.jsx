@@ -219,7 +219,7 @@ function CompanyListPage() {
             <ul>
               {company.emails.map((email, index) => (
                 <li key={index}>
-                  <span className="email-icon">✉️</span> {email}
+                  <span className="email-icon">📧</span> {email}
                 </li>
               ))}
             </ul>
@@ -235,7 +235,7 @@ function CompanyListPage() {
             <ul>
               {company.phoneNumbers.map((phone, index) => (
                 <li key={index}>
-                  <span className="phone-icon">📞</span> {phone}
+                  <span className="phone-icon">☎️</span> {phone}
                 </li>
               ))}
             </ul>
