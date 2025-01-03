@@ -61,7 +61,7 @@ Offers actionable insights such as communication frequency reports, engagement e
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  gh repo clone beingashusoni/Calendar-App
 ```
 
 Go to the project directory
