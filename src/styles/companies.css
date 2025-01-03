@@ -1,0 +1,264 @@
+.company-list-page {
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.company-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 20px;
+  flex: 1 0 48%;
+  box-sizing: border-box;
+}
+
+/* Header and Info Section Styles */
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.company-info {
+  display: flex;
+  gap: 20px;
+}
+
+.location-info {
+  flex: 1;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.contact-section h4 {
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.contact-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.email-icon,
+.phone-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/* Communication Methods Section */
+.communication-methods {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.method-item {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.method-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.method-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.method-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.method-type {
+  background-color: #e0e0e0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.method-description {
+  color: #666;
+}
+
+.method-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Action Buttons Section */
+.company-actions,
+.method-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.delete {
+  background-color: #f44336;
+}
+
+button.delete:hover {
+  background-color: #da190b;
+}
+
+/* Edit Company Form Enhancements */
+.edit-company-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-company-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-company-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.edit-company-form input,
+.edit-company-form textarea,
+.edit-company-form select {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.edit-company-form input:focus,
+.edit-company-form textarea:focus,
+.edit-company-form select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.edit-company-form textarea {
+  resize: vertical;
+}
+
+.edit-company-form button[type="submit"],
+.edit-company-form button[type="button"] {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-company-form button[type="submit"]:hover,
+.edit-company-form button[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.edit-company-form button[type="button"] {
+  background-color: #f44336;
+}
+
+.edit-company-form button[type="button"]:hover {
+  background-color: #da190b;
+}
+
+/* Responsive Adjustments for Form */
+@media (max-width: 768px) {
+  .company-card {
+    flex: 1 0 100%;
+  }
+
+  .company-list-page {
+    gap: 10px;
+  }
+
+  .edit-company-form {
+    padding: 15px;
+  }
+}
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .company-card {
+    flex: 1 0 48%;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  .company-card {
+    flex: 1 0 48%;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .company-card {
+    flex: 1 0 100%;
+    padding: 15px;
+  }
+
+  .company-list-page {
+    gap: 10px;
+  }
+}
