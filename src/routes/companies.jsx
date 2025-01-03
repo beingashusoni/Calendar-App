@@ -89,7 +89,7 @@ function CompanyListPage() {
         emails: ["info@democo.com"],
         phoneNumbers: ["+9876543210"],
         comments: "A demo company to showcase all features.",
-        communicationPeriodicity: 7,
+        communicationPeriodicity: 16,
         lastCommunicationDate: lastCommunicationDate.toISOString(),
         nextCommunicationDate: nextCommunicationDate.toISOString(),
         communicationMethods: [
